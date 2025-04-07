@@ -32,7 +32,7 @@ const BirthdayWebsite = () => {
 
   const timelineData = [
     { month: 'July 2024', title: 'First Meeting', description: 'The day we first met at the basketball court - who knew my best shot would be stealing your heart? Wow may pa ganon, sus ikaw naman kasi talaga unang nagka crush sakin hehe', imgSrc: jul },
-    { month: 'August 2024', title: 'We Fell in Love', description: 'Our magical dates at the National Museum, Intramuros, and many more. I just know that you already wanted to say yes to me at this point. hehe ako lang toh bebe', imgSrc: aug },
+    { month: 'August 2024', title: 'We Fell in Love', description: 'Our magical dates at the National Museum, Intramuros, and many more. Dito palang alam ko na gusto mo na kong sagutin eh. hehe ako lang toh bebe', imgSrc: aug },
     { month: 'September 2024', title: 'Official Couple', description: 'When you decided to say yes! Grabe tong buwan na toh, from our motorcycle ride home where we got soaking wet, to meeting my family while we celebrated my birthday.', imgSrc: sept},
     { month: 'October 2024', title: 'Gala gala muna!', description: 'Gala gala gala, nako ang daming gala dito, from our first monthsary at BGC, to our dates at Cubao kung san nakapag shopping pa sa ukay ang bebe ko', imgSrc: oct },
     { month: 'November 2024', title: 'Food Trip!', description: 'Chubby na tayo nyan, puro nalang kain! We went on countless dates, even sa zoo where we met my twin monkey tapos nag tiktok tiktok pa tayo HAHAHA', imgSrc: nov },
@@ -91,9 +91,9 @@ const BirthdayWebsite = () => {
         {currentSection === 'landing' && (
           <div className="landing-page">
             <h1 className="landing-title">Happy Birthday</h1>
-            <h2 className="landing-subtitle">to my bebe, mahal, dikdok, forever</h2>
+            <h2 className="landing-subtitle">to my baby, mahal, love, riri</h2>
             <p className="landing-text">
-              I love you so much mahal, Here's to celebrating forever with you!
+            Forever grateful for you, mahal. Here’s to us and all the love we share!
             </p>
             <button 
               onClick={() => setCurrentSection('timeline')}
