@@ -89,7 +89,6 @@ const BirthdayWebsite = () => {
       )}
 
       <div className={`content-container ${currentSection}`}>
-        
         {currentSection === 'landing' && (
           <div className="landing-page">
             <h1 className="landing-title">Happy Birthday</h1>
