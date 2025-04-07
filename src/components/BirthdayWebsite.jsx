@@ -44,11 +44,11 @@ const BirthdayWebsite = () => {
   ];
 
   const letters = [
-    { id: 1, title: 'Open when you miss me', content: 'Just remember I\'m always thinking of you.', videoUrl: 'https://youtu.be/FaSqmYMMVU4?si=4na_VOzRRh8skt9x' },
-    { id: 2, title: 'Open when you\'re sad', content: 'Smile ka na babyy', videoUrl: 'https://youtu.be/hk9v3YNK0Ng' },
-    { id: 3, title: 'Open when you need a laugh', content: 'Sana mapatawa kita HAHAHA', videoUrl: 'https://youtu.be/XkHCslPx3d0' },
-    { id: 4, title: 'Open when you need motivation', content: 'You can do anything baby, cheer up!', videoUrl: 'https://youtu.be/yxALsCAEAlk' },
-    { id: 5, title: 'Open when you\'re stressed', content: 'Inhale...Exhale...', videoUrl: 'https://youtu.be/kWR0FMTbNjA' },
+    { id: 1, title: 'Open when you miss me', content: 'Just remember I\'m always thinking of you.', videoUrl: 'https://www.youtube-nocookie.com/embed/FaSqmYMMVU4?enablejsapi=1' },
+    { id: 2, title: 'Open when you\'re sad', content: 'Smile ka na babyy', videoUrl: 'https://www.youtube-nocookie.com/embed/hk9v3YNK0Ng?enablejsapi=1'  },
+    { id: 3, title: 'Open when you need a laugh', content: 'Sana mapatawa kita HAHAHA', videoUrl: 'https://www.youtube-nocookie.com/embed/XkHCslPx3d0?enablejsapi=1' },
+    { id: 4, title: 'Open when you need motivation', content: 'You can do anything baby, cheer up!', videoUrl: 'https://www.youtube-nocookie.com/embed/yxALsCAEAlk?enablejsapi=1' },
+    { id: 5, title: 'Open when you\'re stressed', content: 'Inhale...Exhale...', videoUrl: 'https://www.youtube-nocookie.com/embed/kWR0FMTbNjA?enablejsapi=1' },
   ];
 
   const handleLetterClick = (id) => {
@@ -173,15 +173,15 @@ const BirthdayWebsite = () => {
                   {selectedLetter === letter.id && (
                   <div className="letter-content">
                     <div className="letter-video-container">
-                      <iframe 
-                        sandbox="allow-same-origin allow-scripts allow-popups allow-presentation"
-                        src={letter.videoUrl} 
-                        title={`Video message: ${letter.title}`}
-                        className="letter-video"
-                        frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowFullScreen
-                      ></iframe>
+                    <iframe
+                          src={`${letter.videoUrl}&origin=${window.location.origin}`}
+                          title={`Video: ${letter.title}`}
+                          className="letter-video"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerPolicy="strict-origin-when-cross-origin"
+                          frameBorder="0"
+                          allowFullScreen
+                        />
                     </div>
                     <p className="letter-message">{letter.content}</p>
                   </div>
