@@ -44,12 +44,11 @@ const BirthdayWebsite = () => {
   ];
 
   const letters = [
-    { id: 1, title: 'Open when you miss me', content: 'Just remember I\'m always thinking of you.', videoUrl: 'https://www.youtube.com/embed/[VIDEO_ID_5]' },
-    { id: 2, title: 'Open when you\'re sad', content: 'Remember the time we...', videoUrl: 'https://www.youtube.com/embed/[VIDEO_ID_5]' },
-    { id: 3, title: 'Open when you need a laugh', content: 'Here\'s something to make you smile...', videoUrl: 'https://www.youtube.com/embed/[VIDEO_ID_5]' },
-    { id: 4, title: 'Open when you can\'t sleep', content: 'Close your eyes and imagine us...', videoUrl: 'https://www.youtube.com/embed/[VIDEO_ID_5]' },
-    { id: 5, title: 'Open when you need motivation', content: 'You can do anything, and here\'s why...', videoUrl: 'https://www.youtube.com/embed/[VIDEO_ID_5]' },
-    { id: 6, title: 'Open when you\'re stressed', content: 'Take a deep breath and remember...', videoUrl: 'https://www.youtube.com/embed/[VIDEO_ID_5]' },
+    { id: 1, title: 'Open when you miss me', content: 'Just remember I\'m always thinking of you.', videoUrl: 'https://youtu.be/FaSqmYMMVU4?si=4na_VOzRRh8skt9x' },
+    { id: 2, title: 'Open when you\'re sad', content: 'Smile ka na babyy', videoUrl: 'https://youtu.be/hk9v3YNK0Ng' },
+    { id: 3, title: 'Open when you need a laugh', content: 'Sana mapatawa kita HAHAHA', videoUrl: 'https://youtu.be/XkHCslPx3d0' },
+    { id: 4, title: 'Open when you need motivation', content: 'You can do anything baby, cheer up!', videoUrl: 'https://youtu.be/yxALsCAEAlk' },
+    { id: 5, title: 'Open when you\'re stressed', content: 'Inhale...Exhale...', videoUrl: 'https://youtu.be/kWR0FMTbNjA' },
   ];
 
   const handleLetterClick = (id) => {
@@ -175,6 +174,7 @@ const BirthdayWebsite = () => {
                   <div className="letter-content">
                     <div className="letter-video-container">
                       <iframe 
+                        sandbox="allow-same-origin allow-scripts allow-popups allow-presentation"
                         src={letter.videoUrl} 
                         title={`Video message: ${letter.title}`}
                         className="letter-video"
